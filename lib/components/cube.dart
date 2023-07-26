@@ -22,12 +22,12 @@ Widget cube(String name, int puntate, String deadline, String image,
             ),
             Image.asset(
               image,
-              width: 160,
-              height: 80,
+              width: 140,
+              height: 70,
             ),
             Text(
               name,
-              style: const TextStyle(fontWeight: FontWeight.w700, fontSize: 30),
+              style: const TextStyle(fontWeight: FontWeight.w700, fontSize: 25),
             ),
             Text(
               'puntate:' + ' ' + puntate.toString(),
@@ -36,8 +36,15 @@ Widget cube(String name, int puntate, String deadline, String image,
           ],
         ),
         decoration: const BoxDecoration(
-            color: Colors.white,
-            borderRadius: BorderRadius.all(Radius.circular(30))),
+            color: Color(0xFFEAFDE6),
+            borderRadius: BorderRadius.all(Radius.circular(30)),
+            boxShadow: [
+              BoxShadow(
+                color: Color.fromARGB(151, 231, 231, 231),
+                offset: Offset(8.5, 8.5),
+                blurRadius: 4,
+              )
+            ]),
       ),
     ),
   );
